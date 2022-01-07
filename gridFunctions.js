@@ -1,11 +1,17 @@
 function addRows(){
     let rows=document.getElementsByClassName('row')
-    /*if(rows.length==0){
-        document.createElement
-    }*/
+    if(rows.length==0){
+        let newRow=document.createElement("div")
+        newRow.className="row"
+        let newCol=document.createElement("div")
+        newCol.className='col-sm border border-dark box white'
+        newRow.appendChild(newCol)
+        document.querySelector(".mt-5.content").appendChild(newRow)
+    }
+    else{
     let origRow=rows[0]
     let newRow=origRow.cloneNode(true)
-    document.querySelector(".mt-5.content").appendChild(newRow)
+    document.querySelector(".mt-5.content").appendChild(newRow)}
 }
 
 function addColumns(){
