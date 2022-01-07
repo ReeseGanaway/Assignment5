@@ -15,3 +15,10 @@ function addColumns(){
     rows[i].appendChild(newColumn)
     }
 }
+
+function removeRows(){
+    let rows=document.getElementsByClassName("row")
+    if (rows.length>0){
+        rows[0].remove()
+    }
+}
