@@ -19,9 +19,15 @@ function addColumns(){
     let rows=document.getElementsByClassName("row")
     for(let i=0;i<rows.length;i++){
     let columns=document.getElementsByClassName('col-sm border border-dark box white')
+    if(columns.length==0){
+        let newCol=document.createElement("div")
+        newCol.className='col-sm border border-dark box white'
+        rows[i].appendChild(newCol)
+    }
+    else{
     let origColumn=columns[0]
     let newColumn=origColumn.cloneNode(true)
-    rows[i].appendChild(newColumn)
+    rows[i].appendChild(newColumn)}
     }
 }
 
