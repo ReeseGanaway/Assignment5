@@ -4,3 +4,14 @@ function addRows(){
     let newRow=origRow.cloneNode(true)
     document.querySelector(".mt-5.content").appendChild(newRow)
 }
+
+function addColumns(){
+    
+    let rows=document.getElementsByClassName("row")
+    for(let i=0;i<rows.length;i++){
+    let columns=document.getElementsByClassName('col-sm border border-dark box white')
+    let origColumn=columns[0]
+    let newColumn=origColumn.cloneNode(true)
+    rows[i].appendChild(newColumn)
+    }
+}
