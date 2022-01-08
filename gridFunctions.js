@@ -1,3 +1,5 @@
+
+
 function addRows(){
     let rows=document.getElementsByClassName('row')
     if(rows.length==0){
@@ -5,6 +7,7 @@ function addRows(){
         newRow.className="row"
         let newCol=document.createElement("div")
         newCol.className='col-sm border border-dark box white'
+        newCol.setAttribute('onclick','clickForColor(this)')
         newRow.appendChild(newCol)
         document.querySelector(".mt-5.content").appendChild(newRow)
     }
@@ -26,6 +29,7 @@ function addColumns(){
     if(columns.length==0){
         let newCol=document.createElement("div")
         newCol.className='col-sm border border-dark box white'
+        newCol.setAttribute('onclick','clickForColor(this)')
         rows[i].appendChild(newCol)
     }
     else{
@@ -56,13 +60,15 @@ function removeColumns(){
             }
         }    
     }
-    /*if(rows.length==1){
-        let columns=rows[i].getElementsByClassName('col-sm border border-dark box white')
-        if(columns.length>0){
-            columns[0].remove()
-        }
-        for(let i=rows.length-1;i>=0;i--){
-            rows[i].remove()
-        }
-    }*/
-}}
+}
+}
+
+let boxes=document.getElementsByClassName('col-sm border border-dark box white')
+
+
+
+function clickForColor(x) {
+    let clickColor=document.querySelector('#clickColor').value
+    x.style.backgroundColor = clickColor
+}   
+
