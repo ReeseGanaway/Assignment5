@@ -56,7 +56,7 @@ function removeColumns(){
         for(let i=0;i<rows.length;i++){
         let columns=rows[i].getElementsByClassName('col-sm border border-dark box white')
         if(columns.length>0){
-        boxes[0].remove()
+        columns[0].remove()
         }
         if(columns.length==0){
             for(let i=rows.length-1;i>=0;i--){
@@ -74,5 +74,6 @@ let boxes=document.getElementsByClassName('col-sm border border-dark box white')
 function clickForColor(x) {
     let clickColor=document.querySelector('#clickColor').value
     x.style.backgroundColor = clickColor
-}   
+}  
+ 
 
