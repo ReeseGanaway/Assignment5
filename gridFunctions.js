@@ -67,13 +67,22 @@ function removeColumns(){
 }
 }
 
-let boxes=document.getElementsByClassName('col-sm border border-dark box white')
-
-
-
 function clickForColor(x) {
     let clickColor=document.querySelector('#clickColor').value
     x.style.backgroundColor = clickColor
 }  
  
-
+function changeWhiteToColors(){
+    //let count=0   //delete later
+    let allColor=document.querySelector('#allColor').value
+    let boxes=document.getElementsByClassName('col-sm border border-dark box white')
+    for(i=0;i<boxes.length;i++){
+            console.log(boxes[i])
+            if(boxes[i].style.backgroundColor==""){
+            console.log("Imhere")
+            boxes[i].style.backgroundColor=allColor
+            }
+            //count++;
+        }
+    //console.log(count)
+}
