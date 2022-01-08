@@ -73,16 +73,12 @@ function clickForColor(x) {
 }  
  
 function changeWhiteToColors(){
-    //let count=0   //delete later
     let allColor=document.querySelector('#allColor').value
     let boxes=document.getElementsByClassName('col-sm border border-dark box white')
     for(i=0;i<boxes.length;i++){
-            console.log(boxes[i])
             if(boxes[i].style.backgroundColor==""){
-            console.log("Imhere")
             boxes[i].style.backgroundColor=allColor
             }
-            //count++;
         }
-    //console.log(count)
+
 }
