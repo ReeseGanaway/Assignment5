@@ -14,6 +14,9 @@ function addRows(){
     else{
     let origRow=rows[0]
     let newRow=origRow.cloneNode(true)
+    for(let i=0; i<newRow.getElementsByClassName('col-sm border border-dark box white').length;i++){
+        newRow.getElementsByClassName('col-sm border border-dark box white')[i].setAttribute("style","background:white")
+    }
     document.querySelector(".mt-5.content").appendChild(newRow)}
 }
 
@@ -36,7 +39,6 @@ function addColumns(){
     let origColumn=columns[0]
     let newColumn=origColumn.cloneNode(true)
     newColumn.setAttribute("style", "backgroundColor:white")
-    console.log(newColumn.style.backgroundColor)
     rows[i].appendChild(newColumn)}
     }
 }
