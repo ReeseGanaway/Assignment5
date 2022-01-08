@@ -35,6 +35,8 @@ function addColumns(){
     else{
     let origColumn=columns[0]
     let newColumn=origColumn.cloneNode(true)
+    newColumn.setAttribute("style", "backgroundColor:white")
+    console.log(newColumn.style.backgroundColor)
     rows[i].appendChild(newColumn)}
     }
 }
@@ -52,7 +54,7 @@ function removeColumns(){
         for(let i=0;i<rows.length;i++){
         let columns=rows[i].getElementsByClassName('col-sm border border-dark box white')
         if(columns.length>0){
-        columns[0].remove()
+        boxes[0].remove()
         }
         if(columns.length==0){
             for(let i=rows.length-1;i>=0;i--){
