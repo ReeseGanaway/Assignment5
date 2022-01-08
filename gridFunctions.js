@@ -15,7 +15,7 @@ function addRows(){
     let origRow=rows[0]
     let newRow=origRow.cloneNode(true)
     for(let i=0; i<newRow.getElementsByClassName('col-sm border border-dark box white').length;i++){
-        newRow.getElementsByClassName('col-sm border border-dark box white')[i].setAttribute("style","background:white")
+        newRow.getElementsByClassName('col-sm border border-dark box white')[i].setAttribute("style","background:''")
     }
     document.querySelector(".mt-5.content").appendChild(newRow)}
 }
