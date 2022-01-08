@@ -47,13 +47,10 @@ function removeColumns(){
     if(rows.length>=1){
         for(let i=0;i<rows.length;i++){
         let columns=rows[i].getElementsByClassName('col-sm border border-dark box white')
-        //console.log(columns.length)
         if(columns.length>0){
         columns[0].remove()
         }
-        console.log(columns.length)
         if(columns.length==0){
-            console.log('hi')
             for(let i=rows.length-1;i>=0;i--){
                 rows[i].remove()
             }
