@@ -82,3 +82,11 @@ function changeWhiteToColors(){
         }
 
 }
+
+function fillAllBoxes(){
+    let fillAllValue=document.querySelector('#fillAll').value
+    let boxes=document.getElementsByClassName('col-sm border border-dark box white')
+    for(i=0;i<boxes.length;i++){
+            boxes[i].style.backgroundColor=fillAllValue
+        }
+}
