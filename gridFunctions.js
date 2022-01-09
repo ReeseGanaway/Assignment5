@@ -34,7 +34,7 @@ function addColumns(){
         let newCol=document.createElement("div")
         newCol.className='col-sm border border-dark box white'
         newCol.setAttribute('onclick','clickForColor(this)')
-        newCol.setAttribute('onmouseover','dragColor(this)')
+        newCol.setAttribute('onmousemove','dragColor(this)')
         rows[i].appendChild(newCol)
     }
     else{
