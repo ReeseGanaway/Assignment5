@@ -90,3 +90,8 @@ function fillAllBoxes(){
             boxes[i].style.backgroundColor=fillAllValue
         }
 }
+
+
+function dragColor(x){
+    let dragC=document.querySelector("#drag")
+    x.style.backgroundColor=dragC.value}
