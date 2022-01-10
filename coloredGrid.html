@@ -15,21 +15,21 @@
     <!-- Fix this so that it's not stretching from one side of the screen to the other-->
     <div class="mt-5 content">
         <div class="row">
-            <div class="col-sm border border-dark box white" onclick="clickForColor(this)"></div>
-            <div class="col-sm border border-dark box white" onclick="clickForColor(this)"></div>
-            <div class="col-sm border border-dark box white" onclick="clickForColor(this)"></div>
+            <div class="col-sm border border-dark box white" onmousemove="dragColor(this)" onclick="clickForColor(this)"></div>
+            <div class="col-sm border border-dark box white" onmousemove="dragColor(this)" onclick="clickForColor(this)"></div>
+            <div class="col-sm border border-dark box white" onmousemove="dragColor(this)" onclick="clickForColor(this)"></div>
         </div>
 
         <div class="row">
-            <div class="col-sm border border-dark box white" onclick="clickForColor(this)"></div>
-            <div class="col-sm border border-dark box white" onclick="clickForColor(this)"></div>
-            <div class="col-sm border border-dark box white" onclick="clickForColor(this)"></div>
+            <div class="col-sm border border-dark box white" onmousemove="dragColor(this)" onclick="clickForColor(this)"></div>
+            <div class="col-sm border border-dark box white" onmousemove="dragColor(this)" onclick="clickForColor(this)"></div>
+            <div class="col-sm border border-dark box white" onmousemove="dragColor(this)" onclick="clickForColor(this)"></div>
         </div>
 
         <div class="row">
-            <div class="col-sm border border-dark box white" onclick="clickForColor(this)"></div>
-            <div class="col-sm border border-dark box white" onclick="clickForColor(this)"></div>
-            <div class="col-sm border border-dark box white" onclick="clickForColor(this)"></div>
+            <div class="col-sm border border-dark box white" onmousemove="dragColor(this)" onclick="clickForColor(this)"></div>
+            <div class="col-sm border border-dark box white" onmousemove="dragColor(this)" onclick="clickForColor(this)"></div>
+            <div class="col-sm border border-dark box white" onmousemove="dragColor(this)" onclick="clickForColor(this)"></div>
 
         </div>
     </div>
@@ -114,9 +114,18 @@
         <h6 class=py-2>Select a color and then drag the color over the boxes to change them!</h6>
         <form>
             <label for="">Choose a color:</label>
-            <select name="" id="">
+            <select name="" id="drag">
                 <!-- Add more option values for different colors -->
+                <option value="black">Black</option>
+                <option value="blue">Blue</option>
+                <option value="brown">Brown</option>
+                <option value="green">Green</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+                <option value="purple">Purple</option>
                 <option value="red">Red</option>
+                <option value="">White</option>
+                <option value="yellow">Yellow</option>
             </select>
         </form>
     </div>

@@ -8,6 +8,7 @@ function addRows(){
         let newCol=document.createElement("div")
         newCol.className='col-sm border border-dark box white'
         newCol.setAttribute('onclick','clickForColor(this)')
+        newCol.setAttribute('onmouseover','dragColor(this)')
         newRow.appendChild(newCol)
         document.querySelector(".mt-5.content").appendChild(newRow)
     }
@@ -33,6 +34,7 @@ function addColumns(){
         let newCol=document.createElement("div")
         newCol.className='col-sm border border-dark box white'
         newCol.setAttribute('onclick','clickForColor(this)')
+        newCol.setAttribute('onmousemove','dragColor(this)')
         rows[i].appendChild(newCol)
     }
     else{
@@ -90,3 +92,24 @@ function fillAllBoxes(){
             boxes[i].style.backgroundColor=fillAllValue
         }
 }
+
+
+function dragColor(x){
+    let dragC=document.querySelector("#drag")
+    if(mouseClick==1){
+    x.style.backgroundColor=dragC.value
+    }
+}
+
+let mouseClick=0
+
+document.querySelector(".mt-5.content").addEventListener("mousedown",function(e){
+    e.preventDefault()
+    mouseClick=1
+    console.log(mouseClick)
+})
+
+document.querySelector(".mt-5.content").addEventListener("mouseup",function(){
+    mouseClick=0
+    console.log(mouseClick)
+})
