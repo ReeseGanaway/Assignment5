@@ -48,7 +48,7 @@ function addColumns(){
 function removeRows(){
     let rows=document.getElementsByClassName("row")
     if (rows.length>0){
-        rows[0].remove()
+        rows[rows.length-1].remove()
     }
 }
 
@@ -58,7 +58,7 @@ function removeColumns(){
         for(let i=0;i<rows.length;i++){
         let columns=rows[i].getElementsByClassName('col-sm border border-dark box white')
         if(columns.length>0){
-        columns[0].remove()
+        columns[columns.length-1].remove()
         }
         if(columns.length==0){
             for(let i=rows.length-1;i>=0;i--){
