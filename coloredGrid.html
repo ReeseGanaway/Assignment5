@@ -35,17 +35,26 @@
     </div>
 
     <!-- BUTTONS: USE FLEXBOX TO ALIGN ITEMS NEATLY-->
+    <!-- Buttons to add/remove rows/columns. Solves first-fourth user stories-->
     <div class="">
         <button type="button" class="btn btn-dark my-3 add-row" onclick="addRows()">Add Row</button>
         <button type="button" class="btn btn-dark my-3 del-row" onclick="removeRows()">Delete Row</button>
         <button type="button" class="btn btn-dark my-3 add-col" onclick="addColumns()">Add Column</button>
         <button type="button" class="btn btn-dark my-3 del-col" onclick="removeColumns()">Delete Column</button>
     </div>
+
+    <!--Div that resets the page. Returns all dropdowns to their original colors and restores the gird to a 3 by 3 of uncolored boxes
+        Solves the ninth user story-->
     <div class="">
         <button type="button" class="btn btn-danger m-3" onClick="window.location.reload();">Reset Page</button>
     </div>
 
     <!-- ADD FLEXBOX TO ALIGN ITEMS in the center-->
+
+
+    <!--The 4 following divs with dropdowns and buttons to change colors. Solves fifth user story-->
+
+    <!--Div with dropdown to chose color that boxes will change to when clicked. Solves sixth user story-->
     <div class="">
         <h6 class=py-2>Select from the following list and click on a box to change the color!</h6>
         <form>
@@ -69,6 +78,7 @@
         </form>
     </div>
 
+    <!--Div with dropdown and button to select color and fill all white boxes with that color. Solves seventh user story-->
     <div class="">
         <h6 class=py-2>Select a color and it will change all the <b>white</b> boxes to the color</h6>
         <form>
@@ -89,6 +99,9 @@
         </form>
     </div>
 
+
+    <!--Div with dropdown and button to select color and change all boxes to that color, regadless of if they are colored or not
+        Solves eigth user story-->
     <div class="">
         <h6 class=py-2>Select a color and it will change ALL the boxes to the color</h6>
         <form>
@@ -110,6 +123,8 @@
         </form>
     </div>
 
+    <!--Div with dropdown to select a color that boxes will be changed to if mouse is clicked and dragged over them.
+        Solves tenth user story -->
     <div class="">
         <h6 class=py-2>Select a color and then drag the color over the boxes to change them!</h6>
         <form>
