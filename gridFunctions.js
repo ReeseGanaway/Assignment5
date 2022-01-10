@@ -1,5 +1,6 @@
 
-
+//Function to add rows
+//Solves first user story
 function addRows(){
     let rows=document.getElementsByClassName('row')
     if(rows.length==0){
@@ -21,6 +22,9 @@ function addRows(){
     document.querySelector(".mt-5.content").appendChild(newRow)}
 }
 
+
+//Function to add coloumns
+//Solves second user story
 function addColumns(){
     
     let rows=document.getElementsByClassName("row")
@@ -45,6 +49,9 @@ function addColumns(){
     }
 }
 
+
+//Function to remove rows
+//Solves third user story
 function removeRows(){
     let rows=document.getElementsByClassName("row")
     if (rows.length>0){
@@ -52,6 +59,8 @@ function removeRows(){
     }
 }
 
+//Function to remove columns
+//Solves fourth user story
 function removeColumns(){
     let rows=document.getElementsByClassName("row")
     if(rows.length>=1){
@@ -69,11 +78,16 @@ function removeColumns(){
 }
 }
 
+//Function to change color of a box when clicked.
+//Solves sixth user story
 function clickForColor(x) {
     let clickColor=document.querySelector('#clickColor').value
     x.style.backgroundColor = clickColor
 }  
- 
+
+
+//Function to change the colors of all white boxes
+//Solves seventh user story
 function changeWhiteToColors(){
     let allColor=document.querySelector('#allColor').value
     let boxes=document.getElementsByClassName('col-sm border border-dark box white')
@@ -85,6 +99,8 @@ function changeWhiteToColors(){
 
 }
 
+//Function to fill all boxes with a selected color
+//Solves eigth user story
 function fillAllBoxes(){
     let fillAllValue=document.querySelector('#fillAll').value
     let boxes=document.getElementsByClassName('col-sm border border-dark box white')
@@ -93,7 +109,8 @@ function fillAllBoxes(){
         }
 }
 
-
+//Function to change color of box if the mouse is clicked and dragged over it
+//Solves 10th user story
 function dragColor(x){
     let dragC=document.querySelector("#drag")
     if(mouseClick==1){
@@ -101,8 +118,14 @@ function dragColor(x){
     }
 }
 
+
+//Variable to keep track of whether or not mouse has been clicked
+//Helps solves tenth user story
 let mouseClick=0
 
+
+//Event listeners to help keep track of if mouse is clicked or not
+//Helps solve tenth user story
 document.querySelector(".mt-5.content").addEventListener("mousedown",function(e){
     e.preventDefault()
     mouseClick=1
