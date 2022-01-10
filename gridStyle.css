@@ -5,3 +5,45 @@
 .row{
     width: 1000px;
 }
+
+option[value=black]{
+    background-color: black;
+    color:white;
+}
+
+option[value=blue]{
+    background-color:blue;
+    color:white
+}
+
+option[value=brown]{
+    background-color: brown;
+    color:white;
+}
+
+option[value=green]{
+    background-color: green;
+    color:white;
+}
+
+option[value=orange]{
+    background-color: orange;
+}
+
+option[value=pink]{
+    background-color: pink;
+}
+
+option[value=purple]{
+    background-color: purple;
+    color:white;
+}
+
+option[value=red]{
+    background-color: red;
+    color:white;
+}
+
+option[value=yellow]{
+    background-color: yellow;
+}
